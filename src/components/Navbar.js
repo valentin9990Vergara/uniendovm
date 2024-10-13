@@ -9,9 +9,6 @@ const Navbar = () => {
         <img src={logo} alt="Logo Uniendo Villa María" className="logo" />
       </div>
       <nav className="navbar">
-        <div className="navbar-logo">
-          <h1>Uniendo Villa María</h1>
-        </div>
         <ul className="navbar-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Sobre Nosotros</a></li>
