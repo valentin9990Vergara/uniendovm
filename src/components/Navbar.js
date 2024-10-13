@@ -1,11 +1,17 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../assets/uniendoVm.png'; // Importa el logo desde la carpeta de assets
+import logo from '../assets/uniendoVm.png'; // Importa el logo
+import whatsappIcon from '../assets/whatsapp.png'; // Importa el ícono de WhatsApp
 
 const Navbar = () => {
+  const whatsappNumber = '5491123456789'; // Cambia este número al de tu empresa
+
   return (
     <header className="navbar-container">
       <div className="logo-container">
+        <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
+          <img src={whatsappIcon} alt="WhatsApp Icon" className="whatsapp-icon" />
+        </a>
         <img src={logo} alt="Logo Uniendo Villa María" className="logo" />
       </div>
       <nav className="navbar">
