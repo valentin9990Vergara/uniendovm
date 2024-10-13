@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
-import './styles/App.css'; // Asegúrate de crear este archivo para tus estilos
+import './styles/App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <MainContent />
       <Footer />
     </div>
