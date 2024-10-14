@@ -1,17 +1,26 @@
 import React from 'react';
 import './Navbar.css';
-import logo from '../assets/uniendoVm.png'; // Importa el logo
+import logo from '../assets/logo.png'; // Importa el logo
 import whatsappIcon from '../assets/whatsapp.png'; // Importa el ícono de WhatsApp
+import instagramIcon from '../assets/instagram.png'; // Importa el ícono de Instagram
 
 const Navbar = () => {
-  const whatsappNumber = '5491123456789'; // Cambia este número al de tu empresa
+  const whatsappNumber = '543534296125'; // Cambia este número al de tu empresa
+  const instagramProfile = 'https://www.instagram.com/uniendovillamaria/';
 
   return (
     <header className="navbar-container">
       <div className="logo-container">
-        <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
-          <img src={whatsappIcon} alt="WhatsApp Icon" className="whatsapp-icon" />
-        </a>
+        {/* Contenedor de los íconos */}
+        <div className="icon-container">
+          <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
+            <img src={whatsappIcon} alt="WhatsApp Icon" className="whatsapp-icon" />
+          </a>
+          <a href={instagramProfile} target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt="Instagram Icon" className="instagram-icon" />
+          </a>
+        </div>
+        {/* Logo centrado */}
         <img src={logo} alt="Logo Uniendo Villa María" className="logo" />
       </div>
       <nav className="navbar">
