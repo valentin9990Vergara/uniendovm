@@ -3,69 +3,88 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 /* Contenedor principal para el logo e íconos */
 .logo-container {
   display: flex;
-  justify-content: center; /* Centra el logo */
+  justify-content: space-between; /* Íconos a la izquierda, logo centrado */
   align-items: center;
-  position: relative;
   background-color: white; /* Fondo blanco */
-  padding: 30px 40px;
+  padding: 20px 40px; /* Padding alrededor */
   width: 100%; /* Asegura que cubra todo el ancho */
   box-sizing: border-box; /* Considera padding dentro del ancho */
 }
 
 /* Contenedor para los íconos */
 .icon-container {
-  position: absolute;
-  left: 40px; /* Coloca los íconos en la esquina izquierda */
   display: flex;
   align-items: center;
 }
 
 /* Estilo para el ícono de WhatsApp */
 .whatsapp-icon {
-  width: 20px;
+  width: 20px; /* Tamaño del ícono */
   height: auto;
-  margin-right: 10px;
+  margin-right: 10px; /* Espaciado entre íconos */
 }
 
 /* Estilo para el ícono de Instagram */
 .instagram-icon {
-  width: 20px;
+  width: 20px; /* Tamaño del ícono */
   height: auto;
+}
+
+/* Estilo para el contenedor del ícono de Afiliarse */
+.affiliate-container {
+  display: flex;
+  flex-direction: column; /* Coloca el ícono y el texto en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  margin-left: 20px; /* Espaciado entre el logo y el contenedor de Afiliarse */
+}
+
+.affiliate-link {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: black; /* Cambia el color del texto si es necesario */
+  display: flex;
+  flex-direction: column; /* Coloca el ícono y el texto en columna */
+  align-items: center; /* Centra el contenido */
+}
+
+.affiliate-icon {
+  width: 20px; /* Tamaño del ícono */
+  height: auto;
+}
+
+.affiliate-text {
+  font-size: 12px; /* Tamaño del texto */
+  margin-top: 5px; /* Espaciado entre el ícono y el texto */
 }
 
 /* Estilo para el logo principal */
 .logo {
-  width: 300px; /* Aumenta el tamaño del logo */
+  width: 320px; /* Aumenta el tamaño del logo */
   height: auto;
-}
-
-/* Estilos del contenedor del navbar */
-.navbar-container {
-  width: 100%; /* Asegura que el navbar ocupe todo el ancho */
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* Considera padding dentro del ancho */
+  margin: 0 auto; /* Centra el logo */
 }
 
 /* Estilos generales del navbar */
+.navbar-container {
+  text-align: center;
+  padding: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: center; /* Centra los elementos de navegación */
   align-items: center;
   padding: 10px 20px;
-  background-color: #003366;
+  background-color: #003366; /* Color de la barra de navegación */
   color: white;
   position: sticky;
   top: 0;
-  width: 100%; /* Asegura que la barra ocupe el ancho completo */
+  width: 100%;
   z-index: 1000;
-  box-sizing: border-box;
 }
 
 .navbar-menu {
