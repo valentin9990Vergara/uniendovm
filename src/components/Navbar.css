@@ -8,7 +8,7 @@ body, html {
 /* Contenedor principal para el logo e íconos */
 .logo-container {
   display: flex;
-  justify-content: space-between; /* Íconos a la izquierda, logo centrado */
+  justify-content: space-between; /* Distribuye el espacio entre los íconos, logo y cuadrado */
   align-items: center;
   background-color: white; /* Fondo blanco */
   padding: 20px 40px; /* Padding alrededor */
@@ -16,7 +16,7 @@ body, html {
   box-sizing: border-box; /* Considera padding dentro del ancho */
 }
 
-/* Contenedor para los íconos */
+/* Contenedor para los íconos de redes sociales */
 .icon-container {
   display: flex;
   align-items: center;
@@ -38,9 +38,19 @@ body, html {
 /* Estilo para el contenedor del ícono de Afiliarse */
 .affiliate-container {
   display: flex;
-  flex-direction: column; /* Coloca el ícono y el texto en columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  margin-left: 20px; /* Espaciado entre el logo y el contenedor de Afiliarse */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* Nuevo contenedor para el ícono y texto de Afiliarse */
+.affiliate-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido */
+  background-color: #f0f0f0; /* Fondo del cuadrado */
+  border: 1px solid #cccccc; /* Borde del cuadrado */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 5px; /* Padding interno */
+  margin-left: 20px; /* Espaciado entre el logo y el cuadrado */
 }
 
 .affiliate-link {
@@ -52,7 +62,7 @@ body, html {
 }
 
 .affiliate-icon {
-  width: 20px; /* Tamaño del ícono */
+  width: 30px; /* Tamaño del ícono */
   height: auto;
 }
 
@@ -65,7 +75,6 @@ body, html {
 .logo {
   width: 320px; /* Aumenta el tamaño del logo */
   height: auto;
-  margin: 0 auto; /* Centra el logo */
 }
 
 /* Estilos generales del navbar */
@@ -79,7 +88,7 @@ body, html {
   justify-content: center; /* Centra los elementos de navegación */
   align-items: center;
   padding: 10px 20px;
-  background-color: #003366; /* Color de la barra de navegación */
+  background-color: #fa6f05; /* Color de la barra de navegación */
   color: white;
   position: sticky;
   top: 0;
@@ -106,7 +115,7 @@ body, html {
 }
 
 .navbar-menu li a:hover {
-  color: #00ccff;
+  color: #ff7700;
 }
 
 /* Responsivo para pantallas pequeñas */
@@ -114,7 +123,7 @@ body, html {
   .navbar-menu {
     flex-direction: column;
     display: none;
-    background-color: #003366;
+    background-color: #ec870c;
     width: 100%;
     position: absolute;
     top: 60px;
