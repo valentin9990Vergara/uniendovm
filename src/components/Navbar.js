@@ -35,9 +35,11 @@ const Navbar = () => {
       </div>
       <nav className="navbar">
         <ul className="navbar-menu">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
+          <li><a href="#services">Propuestas</a></li>
+          <li><a href="#services">Transparencia</a></li>
+          <li><a href="#services">Noticias</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
